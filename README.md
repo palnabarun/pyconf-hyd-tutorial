@@ -1,9 +1,8 @@
 # Examples from PyConf Hyderabad Tutorial
 
-The examples are there separate branches for everyone to try out by themselves without looking at the solutions.
-For checking the solution, append `-soln` to the branches as described below.
+The examples are there separate branches for everyone to try out by themselves throughout the tutorial. The branch names for each section are given below:
 
-- Configuration Management: `config`
+- Configuration Management: `configuration`
 - Healthchecks: `healthchecks`
 - Resource Management: `resource`
 - Graceful Termination: `signal`
