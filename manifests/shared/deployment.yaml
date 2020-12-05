@@ -39,3 +39,10 @@ spec:
             timeoutSeconds: 2       # default 1, minimum 1
             successThreshold: 1     # default 1, must be 1 for liveness
             failureThreshold: 3     # default 3, minimum 1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
