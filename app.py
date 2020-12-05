@@ -90,7 +90,7 @@ def readiness_probe():
 def liveness_probe():
     global response_delay
     time.sleep(response_delay)
-    return jsonify({"ready": "yaayy!!! :)"}), 200
+    return jsonify({"status": "healthy!!! :)"}), 200
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
