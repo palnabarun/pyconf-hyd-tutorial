@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: badapp
+spec:
+  selector:
+    matchLabels:
+      app: badapp
+  template:
+    metadata:
+      labels:
+        app: badapp
+    spec:
+      containers:
+        - name: badapp
+          imagePullPolicy: Always
+          image: palnabarun/badapp
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: badapp-config
